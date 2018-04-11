@@ -20,7 +20,7 @@
    
     @include('partials.header')
     <div class="container">
-
+    <div class="row">
     
 
        
@@ -28,10 +28,10 @@
 
           
         @yield('content')
-        <!-- @include('partials.sidebar'); -->
+        @include('partials.sidebar');
         <!-- /.blog-sidebar -->
 
- 
+        </div>
     </div><!-- /.container -->
     
   

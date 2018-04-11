@@ -9,7 +9,7 @@ Movies
 @endsection
 
 @section ('content')
-
+<div class="col-sm-8 blog-main">
         <h2>Movies</h2>
 
         @foreach($movies as $movie)
@@ -19,6 +19,6 @@ Movies
              <p>{{$movie->storyline}}</p>
           </div>
           @endforeach
-
+          </div>
 
 @endsection

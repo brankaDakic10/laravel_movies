@@ -15,4 +15,5 @@
             <h4>Storyline:</h4>
             <p> {{$movie->storyline}}</p>
 </div><!-- /.blog-post -->
+</div>
 @endsection
