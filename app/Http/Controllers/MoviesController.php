@@ -22,4 +22,19 @@ class MoviesController extends Controller
         
                  return view('movies.create');
            }
+
+           //add new action
+   public function store(){
+    
+    $this->validate(request(),[
+        'title'=>'required',
+        'genre'=> 'required',
+        'published_year'=> 'after:1900-01-01',
+        'storyline'=> 'max:1000'
+       ]);
+
+        Movie::create(request()->all());
+        ///redirekcija
+        return redirect()->route('all-movies');
+   }
 }
