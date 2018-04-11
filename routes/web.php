@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/movies','MoviesController@index')->name('all-movies');
+//create
+Route::get('/movies/create','MoviesController@create')->name('create-movie');;
 ////for single movie
 Route::get('/movies/{id}','MoviesController@show')->name('single-movie');
 
